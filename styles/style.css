@@ -46,6 +46,10 @@
 main>section{
     margin-top: 130px;
 }
+.section-tital{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* header style */
 
 /* nav styles */
@@ -101,21 +105,93 @@ main>section{
     margin-left: 130px;
     max-width: 530px;
 }
-.feature-tital{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 #list-1{
     font-weight: 500;
 }
 #list-3{
     color: rgba(255, 144, 14, 1);
 }
+/* featrures style */
+#featrures-section-tital{
+ border-left: 5px solid #FF900E;
+ padding-left: 21px;
+}
+.featrures{
+    gap: 140px;
+}
+.features-card{
+   padding: 30px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+   margin-bottom: 20px;
+   border-radius: 8px;
+}
+.features-card .features-tital{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+#Experience{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#Experience-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.featrures-jtf img{
+    width: 100%;
+}
+/* same facts */
+.facts-contianer{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   margin-top: 100px;
+}
+.facts-card{
+    border: 2px solid rgba(255, 144, 14, 1);
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-
-
-
-
+}
+.facts-namber{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.facts-name{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.facts-das{
+    max-width: 540px;
+}
+/* Sponspor style */
+.section-info{
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors-img{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponspors-img>img{
+    filter: grayscale(100%);
+}
 
 
 
@@ -124,7 +200,48 @@ main>section{
 
 /* midea responsive */
 @media screen and (max-width:576px) {
-   .nav-ber,.nav-links{
+   .nav-ber,
+   .nav-links,
+   .teams,
+   .featrures
+   {
     flex-direction: column;
    } 
+   .teames-img,
+   .facts-contianer,
+   .sponspors-img
+   {
+    grid-template-columns: repeat(1,1fr);
+   }
+   .our-features{
+    margin-left: 20px;
+   }
+   .facts-contianer{
+    justify-items: center;
+    gap: 24px;
+   }
+   .sponspors-img{
+    gap: 50px;
+    justify-items: center;
+   }
+   #Experience{
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+}
+
+
+/* midum diveace */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .sponspors-img,.facts-contianer{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+    }
 }
